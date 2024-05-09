@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time for T</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">回到主頁</a></li>
+                <li><a href="#news">最新消息</a></li>
+                <li><a href="#gallery">照片回顧</a></li>
+                <li><a href="#join-us">加入我們</a></li>
+                <li><a href="#volunteer">志工招募</a></li>
+                <li><a href="#login">登入</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>歡迎來到Time for T</h1>
+        <p>這裡是首頁介紹</p>
+    </section>
+    <section id="news">
+        <h2>最新消息</h2>
+        <p>這裡是最新消息內容</p>
+    </section>
+    <section id="gallery">
+        <h2>照片回顧</h2>
+        <p>這裡展示活動照片</p>
+    </section>
+    <section id="join-us">
+        <h2>加入我們</h2>
+        <p>加入我們的詳細信息</p>
+    </section>
+    <section id="volunteer">
+        <h2>志工招募</h2>
+        <p>志工招募詳細信息</p>
+    </section>
+    <section id="login">
+        <h2>登入</h2>
+        <form action="/submit-login" method="post">
+            <select name="user_type" required>
+                <option value="teacher">我是老師</option>
+                <option value="mentor">我是Mentor</option>
+                <option value="student">我是小孩</option>
+                <option value="school">我是學校端</option>
+            </select>
+            <input type="email" name="email" placeholder="輸入郵箱" required>
+            <input type="password" name="password" placeholder="輸入密碼" required>
+            <button type="submit">登入</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Time for T</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>
